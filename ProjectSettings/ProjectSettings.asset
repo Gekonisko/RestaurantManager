@@ -146,6 +146,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.RestaurantManagment3D
     Standalone: com.DefaultCompany.RestaurantManagment3D
   buildNumber:
     Standalone: 0

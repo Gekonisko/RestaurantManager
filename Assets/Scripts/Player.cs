@@ -1,23 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player : MonoBehaviour {
-    [SerializeField]
-    private float speed;
+
+    [SerializeField] Camera cam;
+    [SerializeField] NavMeshAgent agent;
+    [SerializeField] private float speed;
     private Animator animator;
 
-    private void Awake() {
+    private void Start() {
         animator = GetComponent<Animator>();
     }
 
     void Update() {
-        Moving();
-        //transform.position = new Vector3(transform.position.x, 0, transform.position.y);
+
+        if (Input.GetMouseButtonDown(0)) {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit)) {
+                agent.SetDestination(hit.point);
+            }
+        }
+
+        MoveAnimation();
     }
 
-    void Moving() {
-        animator.SetBool("isRunning", true);
+    void MoveAnimation() {
+        if (agent.velocity == Vector3.zero)
+            animator.SetBool("isRunning", false);
+        else
+            animator.SetBool("isRunning", true);
+    }
+
+    void MovingByKayboard() {
+
         if (Input.GetKey(KeyCode.UpArrow)) {
             transform.position += new Vector3(0, 0, -speed * Time.deltaTime);
             transform.eulerAngles = new Vector3(0, 180, 0);
