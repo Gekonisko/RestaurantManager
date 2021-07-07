@@ -39,19 +39,21 @@
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\MealSetter.cs" />
      <Compile Include="Assets\Scripts\Enums.cs" />
+     <Compile Include="Assets\Scripts\Cook.cs" />
      <Compile Include="Assets\Scripts\Data\CookTaskData.cs" />
+     <Compile Include="Assets\Scripts\CookUI.cs" />
+     <Compile Include="Assets\Scripts\Client.cs" />
      <Compile Include="Assets\Scripts\GameEvents.cs" />
+     <Compile Include="Assets\Scripts\Data\MachineData.cs" />
      <Compile Include="Assets\Scripts\Data\MealData.cs" />
+     <Compile Include="Assets\Scripts\CookingMachine.cs" />
      <Compile Include="Assets\Scripts\ImageReference.cs" />
      <Compile Include="Assets\Scripts\RestaurantController.cs" />
+     <Compile Include="Assets\Scripts\Data\BaseMachineData.cs" />
      <Compile Include="Assets\Scripts\OrderSetter.cs" />
      <Compile Include="Assets\Scripts\Data\OrderData.cs" />
      <Compile Include="Assets\Scripts\CookingPanelController.cs" />
-     <Compile Include="Assets\Scripts\CookUI.cs" />
-     <Compile Include="Assets\Scripts\Cook.cs" />
-     <Compile Include="Assets\Scripts\CookingMachine.cs" />
-     <Compile Include="Assets\Scripts\Data\MachineData.cs" />
-     <Compile Include="Assets\Scripts\Data\BaseMachineData.cs" />
+     <Compile Include="Assets\Scripts\Data\CookingTimeData.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

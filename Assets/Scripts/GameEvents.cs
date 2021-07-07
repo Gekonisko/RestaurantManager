@@ -33,4 +33,12 @@ public static class GameEvents {
     public static IObservable<BaseMachineData> GetMachineSate() => _machineState.AsObservable();
     public static void SetMachineSate(BaseMachineData baseMachineData) => _machineState.OnNext(baseMachineData);
 
+    private static Subject<CookingTimeData> _cookingTime = new Subject<CookingTimeData>();
+    public static IObservable<CookingTimeData> GetCookingTime() => _cookingTime.AsObservable();
+    public static void SetCookingTime(CookingTimeData cookingTimeData) => _cookingTime.OnNext(cookingTimeData);
+
+    private static Subject<CookTaskData> _cookedMeal = new Subject<CookTaskData>();
+    public static IObservable<CookTaskData> GetCookedMeal() => _cookedMeal.AsObservable();
+    public static void SetCookedMeal(CookTaskData cookedMeal) => _cookedMeal.OnNext(cookedMeal);
+
 }
