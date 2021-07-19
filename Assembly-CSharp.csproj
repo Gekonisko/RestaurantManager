@@ -36,24 +36,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\MealSetter.cs" />
+     <Compile Include="Assets\Scripts\Pantry.cs" />
+     <Compile Include="Assets\Scripts\GameEvents.cs" />
+     <Compile Include="Assets\Scripts\Data\MachineData.cs" />
+     <Compile Include="Assets\Scripts\CookingMachine.cs" />
+     <Compile Include="Assets\Scripts\ImageReference.cs" />
+     <Compile Include="Assets\Scripts\RestaurantController.cs" />
+     <Compile Include="Assets\Scripts\OrderSetter.cs" />
+     <Compile Include="Assets\Scripts\CookingPanelController.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Data\ChosenMachineData.cs" />
      <Compile Include="Assets\Scripts\Enums.cs" />
      <Compile Include="Assets\Scripts\Cook.cs" />
      <Compile Include="Assets\Scripts\Data\CookTaskData.cs" />
      <Compile Include="Assets\Scripts\CookUI.cs" />
      <Compile Include="Assets\Scripts\Client.cs" />
-     <Compile Include="Assets\Scripts\GameEvents.cs" />
-     <Compile Include="Assets\Scripts\Data\MachineData.cs" />
+     <Compile Include="Assets\Scripts\Data\CookedMealData.cs" />
      <Compile Include="Assets\Scripts\Data\MealData.cs" />
-     <Compile Include="Assets\Scripts\CookingMachine.cs" />
-     <Compile Include="Assets\Scripts\ImageReference.cs" />
-     <Compile Include="Assets\Scripts\RestaurantController.cs" />
-     <Compile Include="Assets\Scripts\Data\BaseMachineData.cs" />
-     <Compile Include="Assets\Scripts\OrderSetter.cs" />
      <Compile Include="Assets\Scripts\Data\OrderData.cs" />
-     <Compile Include="Assets\Scripts\CookingPanelController.cs" />
      <Compile Include="Assets\Scripts\Data\CookingTimeData.cs" />
+     <Compile Include="Assets\Scripts\PantryMeal.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -618,8 +621,11 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -633,11 +639,14 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    <Reference Include="Unity.Searcher.Editor">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
@@ -651,8 +660,38 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics.Editor">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+        <HintPath>C:/Projekty/Unity/Restaurant Managment 3D/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

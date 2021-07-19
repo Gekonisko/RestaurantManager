@@ -5,11 +5,9 @@ using UnityEngine;
 public struct OrderData {
     public List<MealData> meals;
     public uint clientID;
-    public uint orderId;
 
-    public OrderData(List<MealData> meals, uint clientID, uint orderId) {
+    public OrderData(List<MealData> meals, uint clientID) {
         this.meals = meals;
         this.clientID = clientID;
-        this.orderId = orderId;
     }
 }

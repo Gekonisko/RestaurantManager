@@ -14,8 +14,8 @@ public static class GameEvents {
     public static void SetComplitedOrder(uint clientID) => _complitedOrder.OnNext(clientID);
 
     private static Subject<uint> _showCookingPanel = new Subject<uint>();
-    public static IObservable<uint> GetShowCookingPanel() => _complitedOrder.AsObservable();
-    public static void SetShowCookingPanel(uint cookID) => _complitedOrder.OnNext(cookID);
+    public static IObservable<uint> GetShowCookingPanel() => _showCookingPanel.AsObservable();
+    public static void SetShowCookingPanel(uint cookID) => _showCookingPanel.OnNext(cookID);
 
     private static Subject<CookTaskData> _cookTask = new Subject<CookTaskData>();
     public static IObservable<CookTaskData> GetCookTask() => _cookTask.AsObservable();
@@ -29,16 +29,20 @@ public static class GameEvents {
     public static IObservable<MachineData> GetMachine() => _machine.AsObservable();
     public static void SetMachine(MachineData machineData) => _machine.OnNext(machineData);
 
-    private static Subject<BaseMachineData> _machineState = new Subject<BaseMachineData>();
-    public static IObservable<BaseMachineData> GetMachineSate() => _machineState.AsObservable();
-    public static void SetMachineSate(BaseMachineData baseMachineData) => _machineState.OnNext(baseMachineData);
+    private static Subject<ChosenMachineData> _chosenMachine = new Subject<ChosenMachineData>();
+    public static IObservable<ChosenMachineData> GetChosenMachine() => _chosenMachine.AsObservable();
+    public static void SetChosenMachine(ChosenMachineData chosenMachineData) => _chosenMachine.OnNext(chosenMachineData);
 
     private static Subject<CookingTimeData> _cookingTime = new Subject<CookingTimeData>();
     public static IObservable<CookingTimeData> GetCookingTime() => _cookingTime.AsObservable();
     public static void SetCookingTime(CookingTimeData cookingTimeData) => _cookingTime.OnNext(cookingTimeData);
 
-    private static Subject<CookTaskData> _cookedMeal = new Subject<CookTaskData>();
-    public static IObservable<CookTaskData> GetCookedMeal() => _cookedMeal.AsObservable();
-    public static void SetCookedMeal(CookTaskData cookedMeal) => _cookedMeal.OnNext(cookedMeal);
+    private static Subject<CookedMealData> _cookedMeal = new Subject<CookedMealData>();
+    public static IObservable<CookedMealData> GetCookedMeal() => _cookedMeal.AsObservable();
+    public static void SetCookedMeal(CookedMealData cookedMeal) => _cookedMeal.OnNext(cookedMeal);
+
+    private static Subject<MealData> _removeMealFromPantry = new Subject<MealData>();
+    public static IObservable<MealData> GetRemoveMealFromPantry() => _removeMealFromPantry.AsObservable();
+    public static void SetRemoveMealFromPantry(MealData meal) => _removeMealFromPantry.OnNext(meal);
 
 }

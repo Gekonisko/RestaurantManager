@@ -1,28 +1,38 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Client : MonoBehaviour {
+    public static readonly Vector3 POINT_OF_DYING = new Vector3(52, 1, 50);
 
     public OrderData order;
-    private NavMeshAgent agent;
-    private Animator animator;
+    private NavMeshAgent _agent;
+    private Animator _animator;
+    private IDisposable _completedOrderEvent;
+    private bool _isGoing = false;
+    private bool _isOrderHasBeenPlaced = false;
+    private bool _isGoingToDeath = false;
 
-    private bool isOrderHasBeenPlaced = false;
+    private void Awake() {
+        _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetOrder());
+    }
 
     private void Start() {
-        animator = GetComponent<Animator>();
-        agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(RestaurantController.POSITION_TO_ORDERS);
+        _animator = GetComponent<Animator>();
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.SetDestination(RestaurantController.POSITION_TO_ORDERS);
+        _isGoing = true;
     }
 
     private void Update() {
-        if (!isOrderHasBeenPlaced && !agent.pathPending) {
-            if (agent.remainingDistance <= agent.stoppingDistance) {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f) {
-                    GameEvents.SetClientOrder(order);
-                    isOrderHasBeenPlaced = true;
+        if (_isGoing && !_agent.pathPending) {
+            if (_agent.remainingDistance <= _agent.stoppingDistance) {
+                if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f) {
+                    OnDestinationComplete();
+                    _isGoing = false;
                 }
             }
         }
@@ -30,11 +40,31 @@ public class Client : MonoBehaviour {
         MoveAnimation();
     }
 
-    void MoveAnimation() {
-        if (agent.velocity == Vector3.zero)
-            animator.SetBool("isRunning", false);
+    private void MoveAnimation() {
+        if (_agent.velocity == Vector3.zero)
+            _animator.SetBool("isRunning", false);
         else
-            animator.SetBool("isRunning", true);
+            _animator.SetBool("isRunning", true);
+    }
+
+    private void OnDestinationComplete() {
+        if (!_isOrderHasBeenPlaced) {
+            _isOrderHasBeenPlaced = true;
+            GameEvents.SetClientOrder(order);
+        }
+        if (_isGoingToDeath) {
+            Destroy(gameObject);
+        }
+    }
+
+    private void GetOrder() {
+        _agent.SetDestination(POINT_OF_DYING);
+        _isGoing = true;
+        _isGoingToDeath = true;
+    }
+
+    private void OnDestroy() {
+        _completedOrderEvent?.Dispose();
     }
 
 }

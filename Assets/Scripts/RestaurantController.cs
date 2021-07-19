@@ -13,6 +13,10 @@ public class RestaurantController : MonoBehaviour {
     private IDisposable _orderEvent;
     private IDisposable _cookingPanelEvent;
 
+    IEnumerable das() {
+        yield return null;
+    }
+
     private void Awake() {
         _orderEvent = GameEvents.GetClientOrder().Subscribe(data => CreateOrder(data));
         _cookingPanelEvent = GameEvents.GetShowCookingPanel().Where(_ => g_cookingPanel.activeInHierarchy == false).Subscribe(data => ShowCookingPanel(data));
@@ -24,7 +28,7 @@ public class RestaurantController : MonoBehaviour {
     }
 
     private void CreateOrder(OrderData orderData) {
-        Instantiate(g_order, g_order.transform.position, g_order.transform.rotation, g_ordersUI.transform).GetComponent<OrderSetter>().SetMeals(orderData.meals);
+        Instantiate(g_order, g_order.transform.position, g_order.transform.rotation, g_ordersUI.transform).GetComponent<OrderSetter>().SetParameters(orderData);
     }
 
     private void OnDestroy() {
