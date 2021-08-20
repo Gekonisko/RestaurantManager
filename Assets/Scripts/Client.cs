@@ -18,6 +18,7 @@ public class Client : MonoBehaviour {
 
     private void Awake() {
         _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetOrder());
+        order.clientID = RestaurantController.FREE_CLIENT_ID;
     }
 
     private void Start() {

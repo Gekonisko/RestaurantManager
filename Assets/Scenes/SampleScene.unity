@@ -698,7 +698,7 @@ MonoBehaviour:
     meals:
     - meal: 0
       amount: 1
-    clientID: 2
+    clientID: 0
 --- !u!195 &172104411
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -14893,7 +14893,7 @@ MonoBehaviour:
     meals:
     - meal: 0
       amount: 1
-    clientID: 1
+    clientID: 0
 --- !u!1 &925537579128492048
 GameObject:
   m_ObjectHideFlags: 0

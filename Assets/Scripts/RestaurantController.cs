@@ -5,6 +5,13 @@ using UniRx;
 using UnityEngine;
 
 public class RestaurantController : MonoBehaviour {
+    private static uint _freeClientID = 1;
+    public static uint FREE_CLIENT_ID {
+        get {
+            return _freeClientID++;
+        }
+    }
+
     public readonly static Vector3 POSITION_TO_ORDERS = new Vector3(7, 1, 14);
 
     [SerializeField] private GameObject g_ordersUI;
