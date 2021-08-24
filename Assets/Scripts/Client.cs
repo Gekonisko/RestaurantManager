@@ -11,21 +11,22 @@ public class Client : MonoBehaviour {
     public OrderData order;
     private NavMeshAgent _agent;
     private Animator _animator;
-    private IDisposable _completedOrderEvent;
+    private IDisposable _completedOrderEvent, _clientQueueEvent;
     private bool _isGoing = false;
     private bool _isOrderHasBeenPlaced = false;
     private bool _isGoingToDeath = false;
 
     private void Awake() {
-        _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetOrder());
         order.clientID = RestaurantController.FREE_CLIENT_ID;
+        _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetOrder());
+        _clientQueueEvent = GameEvents.GetClientsQueue().Where(data => data.clientID == order.clientID && data.isThisFreePositionInQueue).Subscribe(data => SetDestinationInQueue(data));
     }
 
     private void Start() {
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
-        _agent.SetDestination(RestaurantController.POSITION_TO_ORDERS);
-        _isGoing = true;
+        Debug.Log("SetClientsQueue");
+        GameEvents.SetClientsQueue(new QueueData(order.clientID, transform.position, false));
     }
 
     private void Update() {
@@ -41,6 +42,16 @@ public class Client : MonoBehaviour {
         MoveAnimation();
     }
 
+    private void SetDestinationInQueue(QueueData data) {
+        Debug.Log("SetDestinationInQueue " + data.clientID);
+        SetDestination(data.position);
+    }
+
+    private void SetDestination(Vector3 position) {
+        _agent.SetDestination(position);
+        _isGoing = true;
+    }
+
     private void MoveAnimation() {
         if (_agent.velocity == Vector3.zero)
             _animator.SetBool("isRunning", false);
@@ -49,6 +60,8 @@ public class Client : MonoBehaviour {
     }
 
     private void OnDestinationComplete() {
+        _agent.isStopped = true;
+        _agent.Stop();
         if (!_isOrderHasBeenPlaced) {
             _isOrderHasBeenPlaced = true;
             GameEvents.SetClientOrder(order);

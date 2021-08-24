@@ -45,4 +45,8 @@ public static class GameEvents {
     public static IObservable<MealData> GetRemoveMealFromPantry() => _removeMealFromPantry.AsObservable();
     public static void SetRemoveMealFromPantry(MealData meal) => _removeMealFromPantry.OnNext(meal);
 
+    private static Subject<QueueData> _clientsQueue = new Subject<QueueData>();
+    public static IObservable<QueueData> GetClientsQueue() => _clientsQueue.AsObservable();
+    public static void SetClientsQueue(QueueData queueData) => _clientsQueue.OnNext(queueData);
+
 }
