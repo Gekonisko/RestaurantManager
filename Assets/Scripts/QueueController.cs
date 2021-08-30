@@ -12,7 +12,6 @@ public class QueueController : MonoBehaviour {
 
     void Awake() {
         _clientsQueueEvent = GameEvents.GetClientsQueue().Where(data => !data.isThisFreePositionInQueue).Subscribe(data => SetPositionInQueue(data));
-        Debug.Log("Subscribe");
     }
 
     public Vector3 GetPositionInQueue(int clientsAfterYou) {
@@ -21,9 +20,7 @@ public class QueueController : MonoBehaviour {
     }
 
     private void SetPositionInQueue(QueueData queueData) {
-        Debug.Log("SetPositionInQueue " + queueData.clientID);
         Vector3 pos = GetPositionInQueue(clientsQueue.Count);
-        Debug.Log(pos);
         GameEvents.SetClientsQueue(new QueueData(queueData.clientID, pos, true));
         clientsQueue.Add(queueData);
     }

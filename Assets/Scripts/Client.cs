@@ -25,7 +25,6 @@ public class Client : MonoBehaviour {
     private void Start() {
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
-        Debug.Log("SetClientsQueue");
         GameEvents.SetClientsQueue(new QueueData(order.clientID, transform.position, false));
     }
 
@@ -43,7 +42,6 @@ public class Client : MonoBehaviour {
     }
 
     private void SetDestinationInQueue(QueueData data) {
-        Debug.Log("SetDestinationInQueue " + data.clientID);
         SetDestination(data.position);
     }
 
@@ -61,7 +59,6 @@ public class Client : MonoBehaviour {
 
     private void OnDestinationComplete() {
         _agent.isStopped = true;
-        _agent.Stop();
         if (!_isOrderHasBeenPlaced) {
             _isOrderHasBeenPlaced = true;
             GameEvents.SetClientOrder(order);
