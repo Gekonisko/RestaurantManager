@@ -11,6 +11,12 @@ public class RestaurantController : MonoBehaviour {
             return _freeClientID++;
         }
     }
+    private static uint _freeMachineID = 1;
+    public static uint FREE_MACHINE_ID {
+        get {
+            return _freeMachineID++;
+        }
+    }
 
     [SerializeField] private GameObject g_ordersUI;
     [SerializeField] private GameObject g_order;

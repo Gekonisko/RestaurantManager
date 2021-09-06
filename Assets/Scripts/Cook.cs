@@ -8,66 +8,87 @@ using UnityEngine.AI;
 public class Cook : MonoBehaviour {
 
     public uint cookID = 0;
+    public float speed = 10f;
     public CookingTimeData cookingTimeData;
     [SerializeField] private bool isCooking = false, hasCookingTask = false;
-    //[SerializeField] private float rotationSmooth;
     [SerializeField] private GameObject g_cookingParticle;
-    private NavMeshAgent agent;
-    private Animator animator;
+    private NavMeshAgent _agent;
+    private Animator _animator;
     private IDisposable _cookTaskEvent, _machineEvent, _cookedMealEvent;
-    private MachineData bestMachineToGo;
-    private Vector3 startingPosition;
+    private MachineData _bestMachineToGo;
+    private Vector3 _startingPosition;
     private uint _freeMachineCount = 0;
 
     private void Awake() {
         _cookTaskEvent = GameEvents.GetCookTask().Where(data => data.cookID == cookID && !hasCookingTask).Subscribe(data => CheckFreeMachines(data));
-        _machineEvent = GameEvents.GetMachine().Where(data => data.cookID == cookID && !hasCookingTask).Subscribe(data => SetDestination(data));
+        _machineEvent = GameEvents.GetMachine().Where(data => data.cookID == cookID && !hasCookingTask).Subscribe(data => SetActualMachine(data));
         _cookedMealEvent = GameEvents.GetCookedMeal().Where(data => data.cookID == cookID).Subscribe(data => GoToStartPosition());
     }
 
     private void Start() {
-        startingPosition = transform.position;
-        agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
+        _startingPosition = transform.position;
+        _agent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update() {
-        if (!isCooking && hasCookingTask && !agent.pathPending) {
-            if (agent.remainingDistance <= agent.stoppingDistance) {
-                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f) {
+        if (!isCooking && hasCookingTask && !_agent.pathPending) {
+            if (_agent.remainingDistance <= _agent.stoppingDistance) {
+                if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f) {
                     isCooking = true;
-                    Debug.Log("Wysyłam czas gotowania do maszyny ID=" + bestMachineToGo.machineID.ToString() + bestMachineToGo.rotation);
+                    Debug.Log("Wysyłam czas gotowania do maszyny ID=" + _bestMachineToGo.machineID.ToString() + _bestMachineToGo.rotation);
                     //StartCoroutine("RotateToMachine");
-                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, bestMachineToGo.rotation.y, transform.eulerAngles.z);
+                    transform.eulerAngles = new Vector3(transform.eulerAngles.x, _bestMachineToGo.rotation.y, transform.eulerAngles.z);
                     g_cookingParticle.SetActive(true);
-                    animator.SetBool("isCooking", true);
-                    GameEvents.SetCookingTime(new CookingTimeData(cookingTimeData.cookingTime, cookingTimeData.percentOfWellCookedTime, cookingTimeData.percentOfBadCookedTime, bestMachineToGo.machineID));
+                    _animator.SetBool("isCooking", true);
+                    GameEvents.SetCookingTime(new CookingTimeData(cookingTimeData.cookingTime, cookingTimeData.percentOfWellCookedTime, cookingTimeData.percentOfBadCookedTime, _bestMachineToGo.machineID));
                 }
             }
         }
-        MoveAnimation();
+        //MoveAnimation();
     }
 
     private void GoToStartPosition() {
         hasCookingTask = false;
         isCooking = false;
-        animator.SetBool("isCooking", false);
+        _animator.SetBool("isCooking", false);
         g_cookingParticle.SetActive(false);
-        agent.SetDestination(startingPosition);
+        _agent.SetDestination(_startingPosition);
+    }
+
+    IEnumerator GoToPosition() {
+        Vector2 worldPosition;
+        Vector3 targetWorldPosition;
+        NavMeshMapData map = NavMesh.ReadSavedMap(_bestMachineToGo.cookingMeal.ToString() + _bestMachineToGo.machineID);
+        Vector2Int mapPosition = NavMesh.GetPositionFromWorldToMap(transform.position);
+        map.walkArea[mapPosition.x].row[mapPosition.y].isWay = false;
+        Vector2Int targetPositionOnMap = NavMesh.GetMinCostWayAroundOnMap(map, mapPosition);
+        while (targetPositionOnMap != NavMesh.POSITION_NOT_FOUND) {
+            worldPosition = NavMesh.GetPositionFromMapToWorld(targetPositionOnMap);
+            targetWorldPosition = new Vector3(worldPosition.x, transform.position.y, worldPosition.y);
+            while (!NavMesh.IsVectorsEqual(transform.position, targetWorldPosition, 0.05f)) {
+                transform.position = Vector3.MoveTowards(transform.position, targetWorldPosition, speed * Time.deltaTime);
+                yield return null;
+            }
+            mapPosition = NavMesh.GetPositionFromWorldToMap(transform.position);
+            map.walkArea[mapPosition.x].row[mapPosition.y].isWay = false;
+            targetPositionOnMap = NavMesh.GetMinCostWayAroundOnMap(map, mapPosition);
+        }
+        yield return null;
     }
 
     IEnumerator RotateToMachine() {
-        while (transform.eulerAngles.y != bestMachineToGo.rotation.z) {
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Lerp(transform.eulerAngles.y, bestMachineToGo.rotation.z, Time.deltaTime), transform.eulerAngles.z);
+        while (transform.eulerAngles.y != _bestMachineToGo.rotation.z) {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Lerp(transform.eulerAngles.y, _bestMachineToGo.rotation.z, Time.deltaTime), transform.eulerAngles.z);
             yield return null;
         }
     }
 
     void MoveAnimation() {
-        if (agent.velocity == Vector3.zero)
-            animator.SetBool("isRunning", false);
+        if (_agent.velocity == Vector3.zero)
+            _animator.SetBool("isRunning", false);
         else
-            animator.SetBool("isRunning", true);
+            _animator.SetBool("isRunning", true);
     }
 
     private void CheckFreeMachines(CookTaskData data) {
@@ -75,21 +96,22 @@ public class Cook : MonoBehaviour {
         GameEvents.SetFreeMachine(data);
     }
 
-    private void SetDestination(MachineData data) {
+    private void SetActualMachine(MachineData data) {
         if (_freeMachineCount == 0)
-            bestMachineToGo = data;
-        bestMachineToGo = GetBetterMachine(bestMachineToGo, data);
+            _bestMachineToGo = data;
+        _bestMachineToGo = GetBetterMachine(_bestMachineToGo, data);
         _freeMachineCount++;
         if (_freeMachineCount != 3) return;
         _freeMachineCount = 0;
-        if (bestMachineToGo.machineState == MachineState.Busy) {
+        if (_bestMachineToGo.machineState == MachineState.Busy) {
             Debug.Log("Nie ma wolnych maszyn");
             return;
         }
         hasCookingTask = true;
-        Debug.Log("Idę do maszyny w pozycji " + bestMachineToGo.machineID.ToString() + " o levelu " + bestMachineToGo.level);
-        agent.SetDestination(bestMachineToGo.position);
-        GameEvents.SetChosenMachine(new ChosenMachineData(cookID, bestMachineToGo.machineID));
+        Debug.Log("Idę do maszyny w pozycji " + _bestMachineToGo.machineID.ToString() + " o levelu " + _bestMachineToGo.level);
+        //agent.SetDestination(bestMachineToGo.position);
+        StartCoroutine("GoToPosition");
+        GameEvents.SetChosenMachine(new ChosenMachineData(cookID, _bestMachineToGo.machineID));
     }
 
     private MachineData GetBetterMachine(MachineData machine1, MachineData machine2) {

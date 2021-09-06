@@ -19,15 +19,17 @@ public struct NavMeshMapData {
 
     [System.Serializable]
     public struct NavMeshMapRowData {
-        public PositionMapData[] col;
+        public PositionMapData[] row;
 
         public NavMeshMapRowData(int dimension1Size) {
-            col = new PositionMapData[dimension1Size];
+            row = new PositionMapData[dimension1Size];
         }
     }
 }
 
+[System.Serializable]
 public struct PositionMapData {
     public bool isWalkable;
+    public bool isWay;
     public byte distance;
 }

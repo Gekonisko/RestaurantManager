@@ -12,8 +12,8 @@ public class CookingMachine : MonoBehaviour {
     [SerializeField] private Meal _cookingMeal;
     [SerializeField] private uint _level;
     [SerializeField] private GameObject travelPoint;
-    private CookingTimeData _cookingTime;
 
+    private CookingTimeData _cookingTime;
     private Animator _animator;
     private Renderer _render;
     private IDisposable _freeMachineEvent, _machineStateEvent, _cookingTimeEvent;
@@ -22,6 +22,7 @@ public class CookingMachine : MonoBehaviour {
     private bool _isMealFinished = false;
 
     private void Awake() {
+        machineID = RestaurantController.FREE_MACHINE_ID;
         _freeMachineEvent = GameEvents.GetFreeMachine().Where(data => data.meal == _cookingMeal).Subscribe(data => SetCookToMachine(data));
         _machineStateEvent = GameEvents.GetChosenMachine().Where(data => data.machineID == machineID).Subscribe(data => SetChosenMachine(data));
         _cookingTimeEvent = GameEvents.GetCookingTime().Where(data => data.machineID == machineID).Subscribe(data => SetCooking(data));
@@ -30,6 +31,8 @@ public class CookingMachine : MonoBehaviour {
     private void Start() {
         _animator = GetComponent<Animator>();
         _render = GetComponent<Renderer>();
+        // NavMeshMapData map = NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(travelPoint.transform.position));
+        // NavMesh.SaveMap(map, _cookingMeal.ToString() + machineID);
     }
 
     private void OnMouseDown() {
@@ -43,7 +46,7 @@ public class CookingMachine : MonoBehaviour {
         }
     }
 
-    IEnumerator Cooking() {
+    private IEnumerator Cooking() {
         //Debug.Log(_cookingTime.cookingTime * ((100 - (_cookingTime.percentOfBadCookedTime + _cookingTime.percentOfWellCookedTime)) / 100.0f) + machineWarmUpTime);
         yield return new WaitForSeconds(_cookingTime.cookingTime * ((100 - (_cookingTime.percentOfBadCookedTime + _cookingTime.percentOfWellCookedTime)) / 100.0f));
         _isMealFinished = true;
@@ -70,7 +73,7 @@ public class CookingMachine : MonoBehaviour {
     private void SetCookToMachine(CookTaskData data) {
         if (machineID == 0)
             throw new System.Exception("Maszyna o nazwie `" + gameObject.name + "` nie ma przydzielonego ID");
-        GameEvents.SetMachine(new MachineData(machineID, _machineSatate, data.cookID, _level, travelPoint == null ? gameObject.transform.position : travelPoint.transform.position, transform.eulerAngles));
+        GameEvents.SetMachine(new MachineData(machineID, _machineSatate, data.cookID, _level, _cookingMeal, transform.eulerAngles));
     }
 
     private void SetChosenMachine(ChosenMachineData data) {

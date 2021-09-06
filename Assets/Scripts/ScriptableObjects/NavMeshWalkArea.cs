@@ -4,6 +4,5 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "new NavMeshWalkArea", menuName = "MyScripts/NavMeshWalkArea")][System.Serializable]
 public class NavMeshWalkArea : ScriptableObject {
-    public NavMeshMapData walkArea;
-    public string destinationName;
+    public NavMeshMapData map;
 }
