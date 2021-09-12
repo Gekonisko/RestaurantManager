@@ -5,18 +5,22 @@ using UnityEngine;
 public struct MachineData {
     public uint machineID; //  0 = nie wybrano konkretnej maszyny
     public MachineState machineState;
+    public Meal cookingMeal;
 
     public uint cookID;
     public uint level;
-    public Meal cookingMeal;
+    public string machineName;
     public Vector3 rotation;
+    public Vector3 position;
 
-    public MachineData(uint machineID, MachineState machineState, uint cookID, uint level, Meal cookingMeal, Vector3 rotation) {
+    public MachineData(uint machineID, MachineState machineState, Meal cookingMeal, uint cookID, uint level, string name, Vector3 rotation, Vector3 position) {
         this.machineID = machineID;
         this.machineState = machineState;
+        this.cookingMeal = cookingMeal;
         this.cookID = cookID;
         this.level = level;
-        this.cookingMeal = cookingMeal;
+        this.machineName = name;
         this.rotation = rotation;
+        this.position = position;
     }
 }

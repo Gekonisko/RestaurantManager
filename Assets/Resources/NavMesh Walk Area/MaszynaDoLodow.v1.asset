@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0712d9934c60ad4479dba96be24dcd3c, type: 3}
-  m_Name: IceCream4
+  m_Name: MaszynaDoLodow.v1
   m_EditorClassIdentifier: 
   map:
     walkArea:
@@ -1612,3 +1612,4 @@ MonoBehaviour:
         distance: 0
     dimension1Size: 21
     dimension2Size: 25
+  startPosition: {x: 13, y: 27.01, z: -8}

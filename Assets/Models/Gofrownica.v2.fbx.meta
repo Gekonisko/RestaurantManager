@@ -1,8 +1,14 @@
 fileFormatVersion: 2
-guid: 7ee3356742fc7844e881d7302aa8828e
+guid: 10519a6e5942c614ab6d0a522e25a752
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -3365085503316572123
+    second: Gofrownica.v2|Gofrownica.v2Action
+  - first:
+      74: -8501940202285213924
+    second: Gofrownica.v2|Gofrownica.v2Action.001
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -34,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -85,7 +91,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.5
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -12,7 +12,7 @@ public class NavMesh : MonoBehaviour {
     [Range(0.5f, 20.0f)] public float scanSquareSize = 1;
 
     private static readonly float MAX_SCAN_DISTANCE = 50.0f;
-    private static NavMeshMapData _map;
+    private static NavMeshMapData _baseMap;
     private static Vector3 _startPosition;
     private Vector2 _scanSize;
     private RaycastHit m_Hit;
@@ -21,15 +21,28 @@ public class NavMesh : MonoBehaviour {
         _startPosition = startPosition.position;
         Vector3 axisDistance = GetAxisDistance(startPosition.position, endPosition.position);
         _scanSize = new Vector2(Mathf.Floor(axisDistance.x), Mathf.Floor(axisDistance.z));
-        _map = new NavMeshMapData((int) (_scanSize.x / scanSquareSize), (int) (_scanSize.y / scanSquareSize));
-        _map = ScanArea(_map);
+        _baseMap = new NavMeshMapData((int) (_scanSize.x / scanSquareSize), (int) (_scanSize.y / scanSquareSize));
+        _baseMap = ScanArea(_baseMap);
     }
 
-    public static NavMeshMapData GetMapData() {
-        NavMeshMapData newMap = new NavMeshMapData(_map.dimension1Size, _map.dimension2Size);
+    public static NavMeshMapData GetBaseMapData() {
+        NavMeshMapData newMap = new NavMeshMapData(_baseMap.dimension1Size, _baseMap.dimension2Size);
         for (int i = 0; i < newMap.dimension1Size; i++) {
             newMap.walkArea[i] = new NavMeshMapData.NavMeshMapRowData(newMap.dimension2Size);
-            newMap.walkArea[i].row = (PositionMapData[]) _map.walkArea[i].row.Clone();
+            newMap.walkArea[i].row = (PositionMapData[]) _baseMap.walkArea[i].row.Clone();
+        }
+        return newMap;
+    }
+
+    public static Vector3 GetActualStartPosition() {
+        return _startPosition;
+    }
+
+    public static NavMeshMapData GetCopyOfMap(NavMeshMapData map) {
+        NavMeshMapData newMap = new NavMeshMapData(map.dimension1Size, map.dimension2Size);
+        for (int i = 0; i < newMap.dimension1Size; i++) {
+            newMap.walkArea[i] = new NavMeshMapData.NavMeshMapRowData(newMap.dimension2Size);
+            newMap.walkArea[i].row = (PositionMapData[]) map.walkArea[i].row.Clone();
         }
         return newMap;
     }
@@ -38,12 +51,12 @@ public class NavMesh : MonoBehaviour {
         return new Vector3(Mathf.Abs(point1.x - point2.x), Mathf.Abs(point1.y - point2.y), Mathf.Abs(point1.z - point2.z));
     }
 
-    public static Vector2 GetPositionFromMapToWorld(Vector2Int posintionOnMap) {
-        return new Vector2(Mathf.Round(_startPosition.x) - Mathf.Round(posintionOnMap.x), Mathf.Round(_startPosition.z) + Mathf.Round(posintionOnMap.y));
+    public static Vector2 GetPositionFromMapToWorld(Vector2Int posintionOnMap, Vector3 mapStartPosition) {
+        return new Vector2(Mathf.Round(mapStartPosition.x) - Mathf.Round(posintionOnMap.x), Mathf.Round(mapStartPosition.z) + Mathf.Round(posintionOnMap.y));
     }
 
-    public static Vector2Int GetPositionFromWorldToMap(Vector3 posintionInWorld) {
-        return new Vector2Int((int) Mathf.Abs(Mathf.Round(_startPosition.x) - Mathf.Round(posintionInWorld.x)), (int) Mathf.Abs(Mathf.Round(_startPosition.z) - Mathf.Round(posintionInWorld.z)));
+    public static Vector2Int GetPositionFromWorldToMap(Vector3 posintionInWorld, Vector3 mapStartPosition) {
+        return new Vector2Int((int) Mathf.Abs(Mathf.Round(mapStartPosition.x) - Mathf.Round(posintionInWorld.x)), (int) Mathf.Abs(Mathf.Round(mapStartPosition.z) - Mathf.Round(posintionInWorld.z)));
     }
 
     public static List<Vector2Int> GetFreePositionAroundOnMap(Vector2Int positionOnMap, NavMeshMapData map) {
@@ -63,7 +76,7 @@ public class NavMesh : MonoBehaviour {
 
     public static Vector2Int GetMinCostWayAroundOnMap(NavMeshMapData map, Vector2Int positionOnMap) {
         Vector2Int minCostWay = POSITION_NOT_FOUND;
-        byte minCost = map.walkArea[positionOnMap.x].row[positionOnMap.y].distance;
+        byte minCost = (!map.walkArea[positionOnMap.x].row[positionOnMap.y].isWalkable ? (byte) 255 : map.walkArea[positionOnMap.x].row[positionOnMap.y].distance);
         for (int x = -1; x <= 1; x++) {
             for (int y = -1; y <= 1; y++) {
                 if (x == 0 && y == 0) continue;
@@ -80,18 +93,8 @@ public class NavMesh : MonoBehaviour {
         return minCostWay;
     }
 
-    public static bool IsVectorsEqual(Vector3 me, Vector3 other, float allowedDifference) {
-        var dx = me.x - other.x;
-        var dy = me.y - other.y;
-        var dz = me.z - other.z;
-
-        if (Mathf.Abs(dx) <= allowedDifference && Mathf.Abs(dy) <= allowedDifference && Mathf.Abs(dz) <= allowedDifference)
-            return true;
-        return false;
-    }
-
     public static NavMeshMapData CreateWayMap(Vector2Int mapPosition) {
-        NavMeshMapData newMap = GetMapData();
+        NavMeshMapData newMap = GetBaseMapData();
         newMap = SetWayToPosition(mapPosition, newMap);
         return newMap;
     }
@@ -99,13 +102,26 @@ public class NavMesh : MonoBehaviour {
     public static void SaveMap(NavMeshMapData map, string name) {
         NavMeshWalkArea asset = new NavMeshWalkArea();
         asset.map = map;
+        asset.startPosition = _startPosition;
         AssetDatabase.CreateAsset(asset, "Assets/Resources/NavMesh Walk Area/" + name + ".asset");
     }
 
-    public static NavMeshMapData ReadSavedMap(string name) {
-        Debug.Log(Resources.Load<NavMeshWalkArea>("NavMesh Walk Area/" + name));
+    public static bool IsMapExistInResources(string name) {
         try {
-            return Resources.Load<NavMeshWalkArea>("NavMesh Walk Area/" + name).map;
+            NavMeshMapData map = GetCopyOfMap(Resources.Load<NavMeshWalkArea>("NavMesh Walk Area/" + name).map);
+            return true;
+        } catch (System.NullReferenceException) {
+            return false;
+        }
+    }
+
+    public static NavMeshWalkArea ReadSavedMap(string name) {
+        try {
+            NavMeshWalkArea data = Resources.Load<NavMeshWalkArea>("NavMesh Walk Area/" + name);
+            NavMeshWalkArea newData = new NavMeshWalkArea();
+            newData.map = GetCopyOfMap(data.map);
+            newData.startPosition = data.startPosition;
+            return newData;
         } catch (System.NullReferenceException) {
             throw new System.Exception("Nie intnieje Mapa o nazwie `" + name + "` w folderze Resources\\NavMesh Walk Area");
         }
@@ -220,7 +236,6 @@ public class NavMesh : MonoBehaviour {
             isTheSameSign = false;
             text.Append("\t" + x);
             for (int z = 0; z < map.dimension1Size; z++) {
-                Debug.Log(z + ", " + x);
                 if (!map.walkArea[z].row[x].isWalkable) {
                     if (!isTheSameSign) {
                         isTheSameSign = true;

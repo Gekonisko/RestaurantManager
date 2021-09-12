@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0712d9934c60ad4479dba96be24dcd3c, type: 3}
-  m_Name: Waffle6
+  m_Name: Gofrownica.v1
   m_EditorClassIdentifier: 
   map:
     walkArea:
@@ -199,22 +199,22 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
+        distance: 21
+      - isWalkable: 1
+        isWay: 1
+        distance: 22
+      - isWalkable: 1
+        isWay: 1
         distance: 23
       - isWalkable: 1
         isWay: 1
-        distance: 22
+        distance: 24
       - isWalkable: 1
         isWay: 1
-        distance: 21
+        distance: 25
       - isWalkable: 1
         isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 21
-      - isWalkable: 1
-        isWay: 1
-        distance: 22
+        distance: 26
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -275,22 +275,22 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
+        distance: 20
+      - isWalkable: 1
+        isWay: 1
+        distance: 21
+      - isWalkable: 1
+        isWay: 1
         distance: 22
       - isWalkable: 1
         isWay: 1
-        distance: 21
+        distance: 23
       - isWalkable: 1
         isWay: 1
-        distance: 20
+        distance: 24
       - isWalkable: 1
         isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 21
+        distance: 25
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -334,79 +334,6 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 21
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 0
-        distance: 0
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 14
-      - isWalkable: 1
-        isWay: 1
-        distance: 13
       - isWalkable: 1
         isWay: 1
         distance: 14
@@ -430,95 +357,16 @@ MonoBehaviour:
         distance: 20
       - isWalkable: 1
         isWay: 1
-        distance: 19
+        distance: 21
       - isWalkable: 1
         isWay: 1
-        distance: 18
+        distance: 22
       - isWalkable: 1
         isWay: 1
-        distance: 17
+        distance: 23
       - isWalkable: 1
         isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 0
-        distance: 0
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 13
-      - isWalkable: 1
-        isWay: 1
-        distance: 12
-      - isWalkable: 1
-        isWay: 1
-        distance: 13
-      - isWalkable: 1
-        isWay: 1
-        distance: 14
-      - isWalkable: 1
-        isWay: 1
-        distance: 15
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
+        distance: 24
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -582,19 +430,19 @@ MonoBehaviour:
         distance: 18
       - isWalkable: 1
         isWay: 1
-        distance: 17
+        distance: 19
       - isWalkable: 1
         isWay: 1
-        distance: 16
+        distance: 20
       - isWalkable: 1
         isWay: 1
-        distance: 15
+        distance: 21
       - isWalkable: 1
         isWay: 1
-        distance: 16
+        distance: 22
       - isWalkable: 1
         isWay: 1
-        distance: 17
+        distance: 23
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -638,30 +486,12 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 11
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 17
+        distance: 12
       - isWalkable: 1
         isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 15
+        distance: 13
       - isWalkable: 1
         isWay: 1
         distance: 14
@@ -671,6 +501,24 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 16
+      - isWalkable: 1
+        isWay: 1
+        distance: 17
+      - isWalkable: 1
+        isWay: 1
+        distance: 18
+      - isWalkable: 1
+        isWay: 1
+        distance: 19
+      - isWalkable: 1
+        isWay: 1
+        distance: 20
+      - isWalkable: 1
+        isWay: 1
+        distance: 21
+      - isWalkable: 1
+        isWay: 1
+        distance: 22
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -711,33 +559,15 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 9
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 10
+      - isWalkable: 1
+        isWay: 1
+        distance: 11
+      - isWalkable: 1
+        isWay: 1
+        distance: 12
       - isWalkable: 1
         isWay: 1
         distance: 13
@@ -747,6 +577,24 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 15
+      - isWalkable: 1
+        isWay: 1
+        distance: 16
+      - isWalkable: 1
+        isWay: 1
+        distance: 17
+      - isWalkable: 1
+        isWay: 1
+        distance: 18
+      - isWalkable: 1
+        isWay: 1
+        distance: 19
+      - isWalkable: 1
+        isWay: 1
+        distance: 20
+      - isWalkable: 1
+        isWay: 1
+        distance: 21
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -787,24 +635,9 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 8
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 9
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -816,13 +649,28 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 12
+        distance: 15
       - isWalkable: 1
         isWay: 1
-        distance: 13
+        distance: 16
       - isWalkable: 1
         isWay: 1
-        distance: 14
+        distance: 17
+      - isWalkable: 1
+        isWay: 1
+        distance: 18
+      - isWalkable: 1
+        isWay: 1
+        distance: 19
+      - isWalkable: 1
+        isWay: 1
+        distance: 18
+      - isWalkable: 1
+        isWay: 1
+        distance: 19
+      - isWalkable: 1
+        isWay: 1
+        distance: 20
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -892,13 +740,13 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 11
+        distance: 17
       - isWalkable: 1
         isWay: 1
-        distance: 12
+        distance: 18
       - isWalkable: 1
         isWay: 1
-        distance: 13
+        distance: 19
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -911,10 +759,10 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
+      - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
+      - isWalkable: 0
         isWay: 0
         distance: 0
       - isWalkable: 1
@@ -968,13 +816,13 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 10
+        distance: 16
       - isWalkable: 1
         isWay: 1
-        distance: 11
+        distance: 17
       - isWalkable: 1
         isWay: 1
-        distance: 12
+        distance: 18
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -984,13 +832,13 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
+      - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
+      - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
+      - isWalkable: 0
         isWay: 0
         distance: 0
       - isWalkable: 1
@@ -1044,13 +892,13 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 9
+        distance: 15
       - isWalkable: 1
         isWay: 1
-        distance: 10
+        distance: 16
       - isWalkable: 1
         isWay: 1
-        distance: 11
+        distance: 17
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1060,7 +908,7 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
+      - isWalkable: 0
         isWay: 0
         distance: 0
       - isWalkable: 1
@@ -1120,13 +968,13 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 8
+        distance: 14
       - isWalkable: 1
         isWay: 1
-        distance: 9
+        distance: 15
       - isWalkable: 1
         isWay: 1
-        distance: 10
+        distance: 16
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1164,45 +1012,121 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 4
+      - isWalkable: 1
+        isWay: 1
+        distance: 3
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 13
+      - isWalkable: 1
+        isWay: 1
+        distance: 14
+      - isWalkable: 1
+        isWay: 1
+        distance: 15
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+    - row:
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 3
       - isWalkable: 1
         isWay: 1
         distance: 2
-      - isWalkable: 1
-        isWay: 1
-        distance: 1
-      - isWalkable: 1
-        isWay: 1
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 1
+        distance: 12
       - isWalkable: 1
         isWay: 1
-        distance: 2
+        distance: 13
       - isWalkable: 1
         isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-      - isWalkable: 1
-        isWay: 1
-        distance: 5
-      - isWalkable: 1
-        isWay: 1
-        distance: 6
-      - isWalkable: 1
-        isWay: 1
-        distance: 7
-      - isWalkable: 1
-        isWay: 1
-        distance: 8
-      - isWalkable: 1
-        isWay: 1
-        distance: 9
+        distance: 14
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1237,15 +1161,6 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 5
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
       - isWalkable: 1
         isWay: 1
         distance: 2
@@ -1279,6 +1194,91 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 10
+      - isWalkable: 1
+        isWay: 1
+        distance: 11
+      - isWalkable: 1
+        isWay: 1
+        distance: 12
+      - isWalkable: 1
+        isWay: 1
+        distance: 13
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 0
+        distance: 0
+    - row:
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 1
+      - isWalkable: 1
+        isWay: 1
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 1
+      - isWalkable: 1
+        isWay: 1
+        distance: 2
+      - isWalkable: 1
+        isWay: 1
+        distance: 3
+      - isWalkable: 1
+        isWay: 1
+        distance: 4
+      - isWalkable: 1
+        isWay: 1
+        distance: 5
+      - isWalkable: 1
+        isWay: 1
+        distance: 6
+      - isWalkable: 1
+        isWay: 1
+        distance: 7
+      - isWalkable: 1
+        isWay: 1
+        distance: 8
+      - isWalkable: 1
+        isWay: 1
+        distance: 9
+      - isWalkable: 1
+        isWay: 1
+        distance: 10
+      - isWalkable: 1
+        isWay: 1
+        distance: 11
+      - isWalkable: 1
+        isWay: 1
+        distance: 12
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1612,3 +1612,4 @@ MonoBehaviour:
         distance: 0
     dimension1Size: 21
     dimension2Size: 25
+  startPosition: {x: 13, y: 27.01, z: -8}

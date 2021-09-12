@@ -17,7 +17,7 @@ public class Client : MonoBehaviour {
     private bool _isGoingToDeath = false;
 
     private void Awake() {
-        order.clientID = RestaurantController.FREE_CLIENT_ID;
+        order.clientID = GameController.FREE_CLIENT_ID;
         _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetOrder());
         _clientQueueEvent = GameEvents.GetClientsQueue().Where(data => data.clientID == order.clientID && data.isThisFreePositionInQueue).Subscribe(data => SetDestinationInQueue(data));
     }
