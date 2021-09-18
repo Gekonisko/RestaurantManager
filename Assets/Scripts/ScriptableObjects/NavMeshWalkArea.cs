@@ -6,4 +6,5 @@ using UnityEngine;
 public class NavMeshWalkArea : ScriptableObject {
     public NavMeshMapData map;
     public Vector3 startPosition;
+    public Vector3 worldDestinationPosition;
 }

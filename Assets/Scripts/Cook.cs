@@ -34,19 +34,18 @@ public class Cook : MonoBehaviour {
         _agent = GetComponent<NavMeshAgent>();
         _animator = GetComponent<Animator>();
         CreateWayMap();
-        StartCoroutine("RotateToMachine");
     }
 
     private void CreateWayMap() {
         if (NavMesh.IsMapExistInResources("CookStartPosition")) return;
-        NavMesh.SaveMap(NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(transform.position, NavMesh.GetActualStartPosition())), "CookStartPosition");
+        NavMesh.SaveMap(NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(transform.position, NavMesh.START_POSITION), NavMesh.BASE_MAP), "CookStartPosition", transform.position);
     }
 
-    private void OnPositionArive() {
+    private void OnDestinationComplete() {
         if (hasCookingTask) {
             Debug.Log("Wysyłam czas gotowania do maszyny ID=" + _bestMachineToGo.machineID.ToString() + _bestMachineToGo.rotation);
             //StartCoroutine("RotateToMachine");
-            transform.eulerAngles = new Vector3(transform.eulerAngles.x, _bestMachineToGo.rotation.y, transform.eulerAngles.z);
+            RotateToPoint(_bestMachineToGo.position);
             g_cookingParticle.SetActive(true);
             _animator.SetBool("isCooking", true);
             GameEvents.SetCookingTime(new CookingTimeData(cookingTimeData.cookingTime, cookingTimeData.percentOfWellCookedTime, cookingTimeData.percentOfBadCookedTime, _bestMachineToGo.machineID));
@@ -67,7 +66,7 @@ public class Cook : MonoBehaviour {
         Vector3 targetWorldPosition;
         Vector2Int mapPosition = NavMesh.GetPositionFromWorldToMap(transform.position, data.startPosition);
         data.map.walkArea[mapPosition.x].row[mapPosition.y].isWay = false;
-        Vector2Int targetMapPosition = NavMesh.GetMinCostWayAroundOnMap(data.map, mapPosition);
+        Vector2Int targetMapPosition = NavMesh.GetMinCostWayAround(data.map, mapPosition);
         while (targetMapPosition != NavMesh.POSITION_NOT_FOUND) {
             worldPosition = NavMesh.GetPositionFromMapToWorld(targetMapPosition, data.startPosition);
             targetWorldPosition = new Vector3(worldPosition.x, transform.position.y, worldPosition.y);
@@ -78,15 +77,21 @@ public class Cook : MonoBehaviour {
             }
             mapPosition = NavMesh.GetPositionFromWorldToMap(transform.position, data.startPosition);
             data.map.walkArea[mapPosition.x].row[mapPosition.y].isWay = false;
-            targetMapPosition = NavMesh.GetMinCostWayAroundOnMap(data.map, mapPosition);
+            targetMapPosition = NavMesh.GetMinCostWayAround(data.map, mapPosition);
+        }
+        Vector3 newDestinationPosition = new Vector3(data.worldDestinationPosition.x, transform.position.y, data.worldDestinationPosition.z);
+        while (Vector3.Distance(transform.position, newDestinationPosition) > 0.05f) {
+            RotateToPoint(newDestinationPosition);
+            transform.position = Vector3.MoveTowards(transform.position, newDestinationPosition, speed * Time.deltaTime);
+            yield return null;
         }
         _animator.SetBool("isRunning", false);
-        OnPositionArive();
+        OnDestinationComplete();
         yield return null;
     }
 
     private void RotateToPoint(Vector3 point) {
-        Vector3 direction = _bestMachineToGo.position - transform.position;
+        Vector3 direction = point - transform.position;
         direction = Vector3.Normalize(direction);
         float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
         transform.eulerAngles = new Vector3(transform.eulerAngles.x, angle, transform.eulerAngles.z);

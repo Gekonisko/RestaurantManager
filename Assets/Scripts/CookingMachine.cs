@@ -49,7 +49,7 @@ public class CookingMachine : MonoBehaviour {
 
     private void CreateWayMap() {
         if (NavMesh.IsMapExistInResources(machineName)) return;
-        NavMesh.SaveMap(NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(travelPoint.transform.position, NavMesh.GetActualStartPosition())), machineName);
+        NavMesh.SaveMap(NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(travelPoint.transform.position, NavMesh.START_POSITION), NavMesh.BASE_MAP), machineName, travelPoint.transform.position);
     }
 
     private IEnumerator Cooking() {

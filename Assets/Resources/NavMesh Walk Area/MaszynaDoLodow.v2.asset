@@ -1613,3 +1613,4 @@ MonoBehaviour:
     dimension1Size: 21
     dimension2Size: 25
   startPosition: {x: 13, y: 27.01, z: -8}
+  worldDestinationPosition: {x: 5, y: 3.5676122, z: -2}
