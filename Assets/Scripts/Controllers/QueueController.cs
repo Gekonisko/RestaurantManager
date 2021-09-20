@@ -5,11 +5,14 @@ using UniRx;
 using UnityEngine;
 
 public class QueueController : MonoBehaviour {
-    [SerializeField] private Transform _restaurantTravelPoint;
+    public static readonly int NO_QUEUE = -1;
+
+    [SerializeField] private Transform _restaurantTravelPoint, _clientPointOfDying;
     private List<QueueData> clientsQueue = new List<QueueData>();
     private IDisposable _clientsQueueEvent, _compliteOrderEvent;
 
     void Awake() {
+        GameController.CLIENT_POINT_OF_DYING = _clientPointOfDying.position;
         _clientsQueueEvent = GameEvents.GetClientsQueue().Where(data => !data.isThisFreePositionInQueue).Subscribe(data => SetPositionInQueue(data));
         _compliteOrderEvent = GameEvents.GetComplitedOrder().Subscribe(clientID => RemoveClientFormQueue(clientID));
     }
@@ -34,7 +37,14 @@ public class QueueController : MonoBehaviour {
         }
     }
 
-    private void CreateWayMap(int maxPeopleInQueue) {
+    private void CreateClientDyingMap() {
+        if (NavMesh.IsMapExistInResources(Client.DYING_MAP_NAME)) return;
+        NavMeshMapData map = NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(_clientPointOfDying.position, NavMesh.START_POSITION), NavMesh.BASE_MAP);
+        NavMesh.SaveMap(map, Client.DYING_MAP_NAME, _clientPointOfDying.position);
+    }
+
+    private void CreateQueueMap(int maxPeopleInQueue) {
+        if (NavMesh.IsMapExistInResources(RestaurantController.RESTAURANT_TRAVEL_MAP_NAME)) return;
         NavMeshMapData map = NavMesh.BASE_MAP;
         Vector2Int positionOnMap = NavMesh.GetPositionFromWorldToMap(GetPositionInQueue(0), NavMesh.START_POSITION);
         for (int i = 1; i < maxPeopleInQueue; i++) {
@@ -61,5 +71,6 @@ public class QueueController : MonoBehaviour {
 
     private void OnDestroy() {
         _clientsQueueEvent?.Dispose();
+        _compliteOrderEvent?.Dispose();
     }
 }

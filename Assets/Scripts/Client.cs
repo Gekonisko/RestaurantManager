@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Client : MonoBehaviour {
-    public static readonly Vector3 POINT_OF_DYING = new Vector3(52, 1, 50);
+    public static readonly string DYING_MAP_NAME = "ClientDyingMap";
 
     public float speed = 10;
     public OrderData order;
@@ -18,7 +18,7 @@ public class Client : MonoBehaviour {
 
     private void Awake() {
         order.clientID = GameController.FREE_CLIENT_ID;
-        _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetOrder());
+        _completedOrderEvent = GameEvents.GetComplitedOrder().Where(clientID => clientID == order.clientID).Subscribe(_ => GetCompleteOrder());
         _clientQueueEvent = GameEvents.GetClientsQueue().Where(data => data.clientID == order.clientID && data.isThisFreePositionInQueue).Subscribe(data => SetDestinationInQueue(data));
     }
 
@@ -48,8 +48,8 @@ public class Client : MonoBehaviour {
         while (targetMapPosition != NavMesh.POSITION_NOT_FOUND) {
             worldPosition = NavMesh.GetPositionFromMapToWorld(targetMapPosition, data.startPosition);
             targetWorldPosition = new Vector3(worldPosition.x, transform.position.y, worldPosition.y);
+            RotateToPoint(targetWorldPosition);
             while (Vector3.Distance(transform.position, targetWorldPosition) > 0.05f) {
-                RotateToPoint(targetWorldPosition);
                 transform.position = Vector3.MoveTowards(transform.position, targetWorldPosition, speed * Time.deltaTime);
                 yield return null;
             }
@@ -59,9 +59,9 @@ public class Client : MonoBehaviour {
             if (data.map.walkArea[mapPosition.x].row[mapPosition.y].distance == _queueData.queueNumber)
                 break;
         }
-        while (Vector3.Distance(transform.position, _queueData.position) > 0.05f) {
-            RotateToPoint(_queueData.position);
-            transform.position = Vector3.MoveTowards(transform.position, _queueData.position, speed * Time.deltaTime);
+        RotateToPoint(data.worldDestinationPosition);
+        while (Vector3.Distance(transform.position, data.worldDestinationPosition) > 0.05f) {
+            transform.position = Vector3.MoveTowards(transform.position, data.worldDestinationPosition, speed * Time.deltaTime);
             yield return null;
         }
         _animator.SetBool("isRunning", false);
@@ -77,16 +77,16 @@ public class Client : MonoBehaviour {
     }
 
     private void SetDestinationInQueue(QueueData data) {
-        //transform.position = data.position;
         _queueData = data;
-        StartCoroutine("GoToPosition", NavMesh.ReadSavedMap(RestaurantController.RESTAURANT_TRAVEL_MAP_NAME));
-        //SetDestination(data.position);
+        NavMeshWalkArea map = NavMesh.ReadSavedMap(RestaurantController.RESTAURANT_TRAVEL_MAP_NAME);
+        map.worldDestinationPosition = _queueData.position;
+        StartCoroutine("GoToPosition", map);
     }
 
-    private void GetOrder() {
-        //_agent.SetDestination(POINT_OF_DYING);
-        Destroy(gameObject);
+    private void GetCompleteOrder() {
+        _queueData.queueNumber = QueueController.NO_QUEUE;
         _isGoingToDeath = true;
+        StartCoroutine("GoToPosition", NavMesh.ReadSavedMap(DYING_MAP_NAME));
     }
 
     private void OnDestroy() {

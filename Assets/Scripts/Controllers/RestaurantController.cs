@@ -21,11 +21,7 @@ public class RestaurantController : MonoBehaviour {
     }
 
     private void Start() {
-        // NavMeshMapData map = NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(g_RestaurantTravelPoint.transform.position, NavMesh.GetActualStartPosition()));
-
         CreateWayMapToRestaurant();
-        NavMesh.PrintWalkableArea(NavMesh.ReadSavedMap(RESTAURANT_TRAVEL_MAP_NAME).map);
-
     }
 
     private void CreateWayMapToRestaurant() {
