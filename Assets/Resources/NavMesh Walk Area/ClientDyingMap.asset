@@ -17,145 +17,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 30
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 28
-      - isWalkable: 1
-        isWay: 1
-        distance: 27
-      - isWalkable: 1
-        isWay: 1
-        distance: 26
-      - isWalkable: 1
-        isWay: 1
-        distance: 25
-      - isWalkable: 1
-        isWay: 1
-        distance: 24
-      - isWalkable: 1
-        isWay: 1
-        distance: 23
-      - isWalkable: 1
-        isWay: 1
-        distance: 22
-      - isWalkable: 1
-        isWay: 1
-        distance: 21
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 15
-      - isWalkable: 1
-        isWay: 1
-        distance: 14
-      - isWalkable: 1
-        isWay: 1
-        distance: 13
-      - isWalkable: 1
-        isWay: 1
-        distance: 12
-      - isWalkable: 1
-        isWay: 1
-        distance: 11
-      - isWalkable: 1
-        isWay: 1
-        distance: 10
-      - isWalkable: 1
-        isWay: 1
-        distance: 9
-      - isWalkable: 1
-        isWay: 1
-        distance: 8
-      - isWalkable: 1
-        isWay: 1
-        distance: 7
-      - isWalkable: 1
-        isWay: 1
-        distance: 6
-      - isWalkable: 1
-        isWay: 1
-        distance: 5
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-    - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -270,13 +131,13 @@ MonoBehaviour:
         distance: 2
       - isWalkable: 1
         isWay: 1
-        distance: 2
+        distance: 1
       - isWalkable: 1
         isWay: 1
-        distance: 2
+        distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 2
+        distance: 1
       - isWalkable: 1
         isWay: 1
         distance: 2
@@ -287,9 +148,6 @@ MonoBehaviour:
         isWay: 1
         distance: 4
     - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -425,281 +283,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 30
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 28
-      - isWalkable: 1
-        isWay: 1
-        distance: 27
-      - isWalkable: 1
-        isWay: 1
-        distance: 26
-      - isWalkable: 1
-        isWay: 1
-        distance: 25
-      - isWalkable: 1
-        isWay: 1
-        distance: 24
-      - isWalkable: 1
-        isWay: 1
-        distance: 23
-      - isWalkable: 1
-        isWay: 1
-        distance: 22
-      - isWalkable: 1
-        isWay: 1
-        distance: 21
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 15
-      - isWalkable: 1
-        isWay: 1
-        distance: 14
-      - isWalkable: 1
-        isWay: 1
-        distance: 13
-      - isWalkable: 1
-        isWay: 1
-        distance: 12
-      - isWalkable: 1
-        isWay: 1
-        distance: 11
-      - isWalkable: 1
-        isWay: 1
-        distance: 10
-      - isWalkable: 1
-        isWay: 1
-        distance: 9
-      - isWalkable: 1
-        isWay: 1
-        distance: 8
-      - isWalkable: 1
-        isWay: 1
-        distance: 7
-      - isWalkable: 1
-        isWay: 1
-        distance: 6
-      - isWalkable: 1
-        isWay: 1
-        distance: 5
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 2
-      - isWalkable: 1
-        isWay: 1
-        distance: 1
-      - isWalkable: 1
-        isWay: 1
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 1
-      - isWalkable: 1
-        isWay: 1
-        distance: 2
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-    - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 30
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 28
-      - isWalkable: 1
-        isWay: 1
-        distance: 27
-      - isWalkable: 1
-        isWay: 1
-        distance: 26
-      - isWalkable: 1
-        isWay: 1
-        distance: 25
-      - isWalkable: 1
-        isWay: 1
-        distance: 24
-      - isWalkable: 1
-        isWay: 1
-        distance: 23
-      - isWalkable: 1
-        isWay: 1
-        distance: 22
-      - isWalkable: 1
-        isWay: 1
-        distance: 21
-      - isWalkable: 1
-        isWay: 1
-        distance: 20
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 16
-      - isWalkable: 1
-        isWay: 1
-        distance: 15
-      - isWalkable: 1
-        isWay: 1
-        distance: 14
-      - isWalkable: 1
-        isWay: 1
-        distance: 13
-      - isWalkable: 1
-        isWay: 1
-        distance: 12
-      - isWalkable: 1
-        isWay: 1
-        distance: 11
-      - isWalkable: 1
-        isWay: 1
-        distance: 10
-      - isWalkable: 1
-        isWay: 1
-        distance: 9
-      - isWalkable: 1
-        isWay: 1
-        distance: 8
-      - isWalkable: 1
-        isWay: 1
-        distance: 7
-      - isWalkable: 1
-        isWay: 1
-        distance: 6
-      - isWalkable: 1
-        isWay: 1
-        distance: 5
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 2
-      - isWalkable: 1
-        isWay: 1
-        distance: 1
-      - isWalkable: 1
-        isWay: 1
-        distance: 1
-      - isWalkable: 1
-        isWay: 1
-        distance: 1
-      - isWalkable: 1
-        isWay: 1
-        distance: 2
-      - isWalkable: 1
-        isWay: 1
-        distance: 3
-      - isWalkable: 1
-        isWay: 1
-        distance: 4
-    - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -833,9 +416,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -906,9 +486,9 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 16
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 15
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -969,9 +549,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -1039,9 +616,9 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 17
-      - isWalkable: 1
-        isWay: 1
-        distance: 17
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1105,9 +682,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -1175,9 +749,9 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 18
-      - isWalkable: 1
-        isWay: 1
-        distance: 18
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1241,9 +815,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -1311,9 +882,9 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 19
-      - isWalkable: 1
-        isWay: 1
-        distance: 19
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -1377,9 +948,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -1511,9 +1079,6 @@ MonoBehaviour:
         isWay: 1
         distance: 7
     - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -1649,9 +1214,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -1783,9 +1345,6 @@ MonoBehaviour:
         isWay: 1
         distance: 9
     - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -1921,9 +1480,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -2057,9 +1613,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -2193,9 +1746,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -2329,9 +1879,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -2465,9 +2012,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -2601,9 +2145,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -2735,9 +2276,6 @@ MonoBehaviour:
         isWay: 1
         distance: 16
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -2771,18 +2309,18 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 30
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 30
+      - isWalkable: 1
+        isWay: 1
+        distance: 30
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 28
       - isWalkable: 1
         isWay: 1
         distance: 27
@@ -2871,9 +2409,6 @@ MonoBehaviour:
         isWay: 1
         distance: 17
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -3007,9 +2542,6 @@ MonoBehaviour:
         isWay: 1
         distance: 18
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -3143,9 +2675,6 @@ MonoBehaviour:
         isWay: 1
         distance: 19
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -3281,9 +2810,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -3417,9 +2943,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -3553,9 +3076,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -3577,10 +3097,10 @@ MonoBehaviour:
         distance: 36
       - isWalkable: 1
         isWay: 1
-        distance: 35
+        distance: 36
       - isWalkable: 1
         isWay: 1
-        distance: 35
+        distance: 36
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -3689,9 +3209,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -3716,7 +3233,7 @@ MonoBehaviour:
         distance: 35
       - isWalkable: 1
         isWay: 1
-        distance: 34
+        distance: 35
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -3825,9 +3342,6 @@ MonoBehaviour:
     - row:
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -3853,18 +3367,18 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 30
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 29
@@ -3959,9 +3473,6 @@ MonoBehaviour:
         isWay: 1
         distance: 25
     - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -4106,9 +3617,6 @@ MonoBehaviour:
         distance: 40
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
         distance: 39
       - isWalkable: 1
         isWay: 1
@@ -4231,9 +3739,6 @@ MonoBehaviour:
         isWay: 1
         distance: 27
     - row:
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
       - isWalkable: 1
         isWay: 1
         distance: 41
@@ -4372,6 +3877,136 @@ MonoBehaviour:
         distance: 42
       - isWalkable: 1
         isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 30
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+      - isWalkable: 1
+        isWay: 1
+        distance: 29
+    - row:
+      - isWalkable: 1
+        isWay: 1
         distance: 42
       - isWalkable: 1
         isWay: 1
@@ -4411,142 +4046,6 @@ MonoBehaviour:
         distance: 30
       - isWalkable: 1
         isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-      - isWalkable: 1
-        isWay: 1
-        distance: 29
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 30
-      - isWalkable: 1
-        isWay: 1
         distance: 30
       - isWalkable: 1
         isWay: 1
@@ -4608,9 +4107,9 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 30
       - isWalkable: 1
         isWay: 1
         distance: 30
@@ -4639,915 +4138,9 @@ MonoBehaviour:
         isWay: 1
         distance: 30
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-      - isWalkable: 1
-        isWay: 1
-        distance: 31
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-      - isWalkable: 1
-        isWay: 1
-        distance: 32
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-      - isWalkable: 1
-        isWay: 1
-        distance: 33
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-      - isWalkable: 1
-        isWay: 1
-        distance: 34
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-      - isWalkable: 1
-        isWay: 1
-        distance: 35
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-      - isWalkable: 1
-        isWay: 1
-        distance: 36
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 37
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
+        distance: 42
       - isWalkable: 1
         isWay: 1
         distance: 41
@@ -5565,6 +4158,891 @@ MonoBehaviour:
         distance: 37
       - isWalkable: 1
         isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+      - isWalkable: 1
+        isWay: 1
+        distance: 31
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+      - isWalkable: 1
+        isWay: 1
+        distance: 32
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+      - isWalkable: 1
+        isWay: 1
+        distance: 33
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+      - isWalkable: 1
+        isWay: 1
+        distance: 34
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+      - isWalkable: 1
+        isWay: 1
+        distance: 35
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+      - isWalkable: 1
+        isWay: 1
+        distance: 36
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
+        distance: 37
+      - isWalkable: 1
+        isWay: 1
         distance: 37
       - isWalkable: 1
         isWay: 1
@@ -5591,6 +5069,24 @@ MonoBehaviour:
         isWay: 1
         distance: 37
     - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -5606,51 +5102,27 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
-      - isWalkable: 1
-        isWay: 1
-        distance: 38
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 38
@@ -5726,7 +5198,28 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 38
+      - isWalkable: 1
+        isWay: 1
+        distance: 38
     - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -5742,51 +5235,27 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
-      - isWalkable: 1
-        isWay: 1
-        distance: 39
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 39
@@ -5862,7 +5331,37 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 39
+      - isWalkable: 1
+        isWay: 1
+        distance: 39
     - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -5878,48 +5377,15 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 40
+        distance: 42
       - isWalkable: 1
         isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
-      - isWalkable: 1
-        isWay: 1
-        distance: 40
+        distance: 41
       - isWalkable: 1
         isWay: 1
         distance: 40
@@ -5959,6 +5425,9 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 41
+      - isWalkable: 1
+        isWay: 1
+        distance: 40
       - isWalkable: 1
         isWay: 1
         distance: 40
@@ -5999,6 +5468,33 @@ MonoBehaviour:
         isWay: 1
         distance: 40
     - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 42
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -6016,40 +5512,10 @@ MonoBehaviour:
         distance: 0
       - isWalkable: 1
         isWay: 1
-        distance: 41
+        distance: 43
       - isWalkable: 1
         isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
-      - isWalkable: 1
-        isWay: 1
-        distance: 41
+        distance: 42
       - isWalkable: 1
         isWay: 1
         distance: 41
@@ -6135,6 +5601,39 @@ MonoBehaviour:
         isWay: 1
         distance: 41
     - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 43
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -6234,43 +5733,37 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
-      - isWalkable: 1
-        isWay: 1
-        distance: 42
     - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
       - isWalkable: 0
         isWay: 0
         distance: 0
@@ -6280,42 +5773,9 @@ MonoBehaviour:
       - isWalkable: 0
         isWay: 0
         distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
-      - isWalkable: 1
-        isWay: 1
-        distance: 43
+      - isWalkable: 0
+        isWay: 0
+        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 43
@@ -6407,151 +5867,6 @@ MonoBehaviour:
         isWay: 1
         distance: 43
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-      - isWalkable: 1
-        isWay: 1
-        distance: 44
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 45
@@ -6582,6 +5897,145 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 45
+      - isWalkable: 1
+        isWay: 1
+        distance: 45
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 45
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+      - isWalkable: 1
+        isWay: 1
+        distance: 44
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
       - isWalkable: 1
         isWay: 1
         distance: 45
@@ -6679,151 +6133,6 @@ MonoBehaviour:
         isWay: 1
         distance: 45
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-      - isWalkable: 1
-        isWay: 1
-        distance: 46
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 47
@@ -6848,6 +6157,145 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 47
+      - isWalkable: 1
+        isWay: 1
+        distance: 47
+      - isWalkable: 1
+        isWay: 1
+        distance: 47
+      - isWalkable: 1
+        isWay: 1
+        distance: 47
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+      - isWalkable: 1
+        isWay: 1
+        distance: 46
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
       - isWalkable: 1
         isWay: 1
         distance: 47
@@ -6951,151 +6399,6 @@ MonoBehaviour:
         isWay: 1
         distance: 47
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-      - isWalkable: 1
-        isWay: 1
-        distance: 48
-    - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
       - isWalkable: 1
         isWay: 1
         distance: 49
@@ -7114,6 +6417,145 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 49
+      - isWalkable: 1
+        isWay: 1
+        distance: 49
+      - isWalkable: 1
+        isWay: 1
+        distance: 49
+      - isWalkable: 1
+        isWay: 1
+        distance: 49
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+      - isWalkable: 1
+        isWay: 1
+        distance: 48
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
+      - isWalkable: 1
+        isWay: 1
+        distance: 50
       - isWalkable: 1
         isWay: 1
         distance: 49
@@ -7223,15 +6665,27 @@ MonoBehaviour:
         isWay: 1
         distance: 49
     - row:
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
-      - isWalkable: 0
-        isWay: 0
-        distance: 0
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
       - isWalkable: 1
         isWay: 1
         distance: 50
@@ -7343,22 +6797,406 @@ MonoBehaviour:
       - isWalkable: 1
         isWay: 1
         distance: 50
+    - row:
       - isWalkable: 1
         isWay: 1
-        distance: 50
+        distance: 52
       - isWalkable: 1
         isWay: 1
-        distance: 50
+        distance: 52
       - isWalkable: 1
         isWay: 1
-        distance: 50
+        distance: 52
       - isWalkable: 1
         isWay: 1
-        distance: 50
+        distance: 52
       - isWalkable: 1
         isWay: 1
-        distance: 50
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+      - isWalkable: 1
+        isWay: 1
+        distance: 51
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+      - isWalkable: 1
+        isWay: 1
+        distance: 52
+    - row:
+      - isWalkable: 1
+        isWay: 1
+        distance: 54
+      - isWalkable: 1
+        isWay: 1
+        distance: 54
+      - isWalkable: 1
+        isWay: 1
+        distance: 54
+      - isWalkable: 1
+        isWay: 1
+        distance: 54
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
+      - isWalkable: 1
+        isWay: 1
+        distance: 53
     dimension1Size: 54
-    dimension2Size: 45
-  startPosition: {x: 47.5, y: 27.01, z: 8.7}
+    dimension2Size: 44
+  startPosition: {x: 44.7, y: 27.01, z: 9.9}
   worldDestinationPosition: {x: 44.825462, y: 0, z: 49.017082}

@@ -17,6 +17,11 @@ public class QueueController : MonoBehaviour {
         _compliteOrderEvent = GameEvents.GetComplitedOrder().Subscribe(clientID => RemoveClientFormQueue(clientID));
     }
 
+    private void Start() {
+        //CreateQueueMap(8);
+        CreateClientDyingMap();
+    }
+
     private void RemoveClientFormQueue(uint clientID) {
         foreach (QueueData client in clientsQueue) {
             if (client.clientID == clientID) {
@@ -37,18 +42,22 @@ public class QueueController : MonoBehaviour {
         }
     }
 
+    // Map kreator
     private void CreateClientDyingMap() {
         if (NavMesh.IsMapExistInResources(Client.DYING_MAP_NAME)) return;
         NavMeshMapData map = NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(_clientPointOfDying.position, NavMesh.START_POSITION), NavMesh.BASE_MAP);
         NavMesh.SaveMap(map, Client.DYING_MAP_NAME, _clientPointOfDying.position);
     }
 
+    //Map kreator
     private void CreateQueueMap(int maxPeopleInQueue) {
         if (NavMesh.IsMapExistInResources(RestaurantController.RESTAURANT_TRAVEL_MAP_NAME)) return;
+        Debug.Log("CreateQueueMap");
         NavMeshMapData map = NavMesh.BASE_MAP;
         Vector2Int positionOnMap = NavMesh.GetPositionFromWorldToMap(GetPositionInQueue(0), NavMesh.START_POSITION);
         for (int i = 1; i < maxPeopleInQueue; i++) {
             map = NavMesh.ConnectTwoPoints(map, NavMesh.GetPositionFromWorldToMap(GetPositionInQueue(i - 1), NavMesh.START_POSITION), NavMesh.GetPositionFromWorldToMap(GetPositionInQueue(i), NavMesh.START_POSITION), (byte) i);
+            Debug.Log(i);
         }
         map = NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(GetPositionInQueue(maxPeopleInQueue - 1), NavMesh.START_POSITION), map, (byte) (maxPeopleInQueue - 1));
         NavMesh.SaveMap(map, RestaurantController.RESTAURANT_TRAVEL_MAP_NAME, new Vector3(0, 0, 0));

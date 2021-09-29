@@ -20,16 +20,6 @@ public class RestaurantController : MonoBehaviour {
         _cookingPanelEvent = GameEvents.GetShowCookingPanel().Where(_ => g_cookingPanel.activeInHierarchy == false).Subscribe(data => ShowCookingPanel(data));
     }
 
-    private void Start() {
-        CreateWayMapToRestaurant();
-    }
-
-    private void CreateWayMapToRestaurant() {
-        if (NavMesh.IsMapExistInResources(RESTAURANT_TRAVEL_MAP_NAME)) return;
-        NavMeshMapData map = NavMesh.CreateWayMap(NavMesh.GetPositionFromWorldToMap(g_RestaurantTravelPoint.transform.position, NavMesh.START_POSITION), NavMesh.BASE_MAP);
-        NavMesh.SaveMap(map, RESTAURANT_TRAVEL_MAP_NAME, g_RestaurantTravelPoint.transform.position);
-    }
-
     private void ShowCookingPanel(uint cookID) {
         g_cookingPanel.SetActive(true);
         g_cookingPanel.GetComponent<CookingPanelController>().cookID = cookID;

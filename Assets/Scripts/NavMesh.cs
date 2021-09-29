@@ -164,7 +164,6 @@ public class NavMesh : MonoBehaviour {
 
     private static NavMeshMapData SetWayToPosition(Vector2Int positionOnMap, NavMeshMapData map, byte startFromDistance = 0) {
         byte distance = (byte) (startFromDistance + 1);
-        Debug.Log(positionOnMap);
         map.walkArea[positionOnMap.x].row[positionOnMap.y].distance = startFromDistance;
         map.walkArea[positionOnMap.x].row[positionOnMap.y].isWay = true;
         map.walkArea[positionOnMap.x].row[positionOnMap.y].isWalkable = true;

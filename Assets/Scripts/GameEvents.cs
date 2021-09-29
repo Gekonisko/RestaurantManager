@@ -49,4 +49,8 @@ public static class GameEvents {
     public static IObservable<QueueData> GetClientsQueue() => _clientsQueue.AsObservable();
     public static void SetClientsQueue(QueueData queueData) => _clientsQueue.OnNext(queueData);
 
+    private static Subject<TimeData> _dayTime = new Subject<TimeData>();
+    public static IObservable<TimeData> GetDayTime() => _dayTime.AsObservable();
+    public static void SetDayTime(TimeData dayTime) => _dayTime.OnNext(dayTime);
+
 }
