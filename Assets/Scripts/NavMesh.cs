@@ -5,7 +5,6 @@ using System.Text;
 using UnityEditor;
 using UnityEngine;
 
-//GameObjekty StartPosition oraz EndPosition należy ustawić na pozycjach całkowitych by nie było żadnych niedokładności w mapie. Mapa korzysta z koordynatów X (jako X na mapie) oraz Z (jako Y na mapie)
 public class NavMesh : MonoBehaviour {
     public static readonly Vector2Int POSITION_NOT_FOUND = new Vector2Int(-1, -1);
     public Transform startPosition, endPosition;
@@ -19,11 +18,7 @@ public class NavMesh : MonoBehaviour {
     }
 
     private static Vector3 _startPosition;
-    public static Vector3 START_POSITION {
-        get {
-            return _startPosition;
-        }
-    }
+    public static Vector3 START_POSITION => _startPosition;
 
     private static readonly float MAX_SCAN_DISTANCE = 50.0f;
     private Vector2 _scanSize;

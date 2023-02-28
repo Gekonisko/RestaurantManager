@@ -1,15 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2701127662747436452
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MachineShader
   m_Shader: {fileID: -6465566751694194690, guid: e1c895b9d7df8544cac8e8a5b89a725a, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -35,11 +49,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Boolean_3db694caaf3843ca9e2c807a02c3a0a7: 0
     - Boolean_isEmission: 0
     - Vector1_AnimationFrequency: 0
+    - Vector1_EmissionFrequency: 0
     - Vector1_a7189c8300c24326a2ec2bcdbe225e6a: 3
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_EmissionColor: {r: 0.8627451, g: 0.11561868, b: 0.09313814, a: 0}
     - Color_d269bf0bf5994cadabc0ccaf5c442158: {r: 0.0710217, g: 0.7924528, b: 0.10316468, a: 0}

@@ -14,7 +14,7 @@ public class OrderSetter : MonoBehaviour {
     }
 
     public void OnMouseDown() {
-        if (isEnoughMealsInPantry()) {
+        if (IsEnoughMealsInPantry()) {
             GameEvents.SetComplitedOrder(_orderData.clientID);
             foreach (MealData meal in _orderData.meals)
                 GameEvents.SetRemoveMealFromPantry(meal);
@@ -22,7 +22,7 @@ public class OrderSetter : MonoBehaviour {
         }
     }
 
-    private bool isEnoughMealsInPantry() {
+    private bool IsEnoughMealsInPantry() {
         foreach (MealData meal in _orderData.meals) {
             if (Pantry.GetAmountOfMeal(meal.meal) < meal.amount)
                 return false;

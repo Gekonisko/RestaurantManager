@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Pantry : MonoBehaviour {
-    private static Dictionary<Meal, uint> mealsInPantry = new Dictionary<Meal, uint>();
+    private static Dictionary<Meal, uint> mealsInPantry = new();
 
     public static void AddMealToPantry(Meal meal, uint amount) {
         if (!mealsInPantry.ContainsKey(meal))

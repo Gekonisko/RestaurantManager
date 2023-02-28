@@ -20,7 +20,7 @@ public class DayNightCycle : MonoBehaviour {
     }
 
     private void Update() {
-        if (Preset == null || !isDayCycleOn)
+        if (!isDayCycleOn)
             return;
         if (Application.isPlaying) {
             _timeOfDay += Time.deltaTime / _dayMultiplier;
@@ -46,12 +46,8 @@ public class DayNightCycle : MonoBehaviour {
         RenderSettings.ambientLight = Preset.AmbientColor.Evaluate(timePercent);
         RenderSettings.fogColor = Preset.FogColor.Evaluate(timePercent);
 
-        if (DirectionalLight != null) {
-            DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
-
-            DirectionalLight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
-        }
-
+        DirectionalLight.color = Preset.DirectionalColor.Evaluate(timePercent);
+        DirectionalLight.transform.localRotation = Quaternion.Euler(new Vector3((timePercent * 360f) - 90f, 170f, 0));
     }
 
     private void OnValidate() {
